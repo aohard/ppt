@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura Telecentro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            position: relative;
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        .container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .hover-area {
+            position: absolute;
+            border: 2px solid transparent;
+            cursor: pointer;
+        }
+
+        .hover-area:hover {
+            border-color: blue;
+        }
+
+        .tooltip {
+            display: none;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.75);
+            color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+            white-space: nowrap;
+            z-index: 10;
+        }
+
+        .hover-area:hover + .tooltip {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="Factura.png" alt="Factura Telecentro">
+
+        <!-- Área 1: Nombre del Cliente -->
+        <div class="hover-area" style="top: 100px; left: 50px; width: 300px; height: 30px;"></div>
+        <div class="tooltip" style="top: 130px; left: 50px;">Nombre del Cliente: Ariel Mansilla</div>
+
+        <!-- Área 2: Total a Pagar -->
+        <div class="hover-area" style="top: 160px; left: 600px; width: 150px; height: 30px;"></div>
+        <div class="tooltip" style="top: 190px; left: 600px;">Total a Pagar: $14,161.00</div>
+
+        <!-- Área 3: Fecha de Vencimiento -->
+        <div class="hover-area" style="top: 180px; left: 600px; width: 150px; height: 30px;"></div>
+        <div class="tooltip" style="top: 210px; left: 600px;">Vencimiento: 11/09/2023</div>
+
+        <!-- Agrega más áreas según las partes que quieras destacar -->
+    </div>
+
+</body>
+</html>
