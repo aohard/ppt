@@ -68,3 +68,17 @@ body {
 .description.active {
     display: block;
 }
+
+/* Contenedor para las imágenes y títulos */
+.image-title-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+h3 {
+    font-size: 15px;
+    margin: 0; /* Quita el margen por defecto de los títulos */
+    color: white; /* Color del texto para que sea visible sobre el fondo oscuro */
+}
