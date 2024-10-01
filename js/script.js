@@ -1,5 +1,5 @@
-// Función para crear el efecto lupa
-function magnify(imgID, zoom) {
+ // Función para crear el efecto lupa
+ function magnify(imgID, zoom) {
     let img, glass, w, h, bw;
     img = document.getElementById(imgID);
 
@@ -47,6 +47,9 @@ function magnify(imgID, zoom) {
 
         /* Mostrar el zoom en la lupa */
         glass.style.backgroundPosition = "-" + ((x * zoom) - w) + "px -" + ((y * zoom) - h) + "px";
+
+        /* Mostrar la descripción dependiendo de la posición del cursor */
+        showDescription(x, y);
     }
 
     function getCursorPos(e) {
@@ -61,6 +64,31 @@ function magnify(imgID, zoom) {
         x = x - window.pageXOffset;
         y = y - window.pageYOffset;
         return {x : x, y : y};
+    }
+
+    function showDescription(x, y) {
+        // Ocultar todas las descripciones inicialmente
+        document.getElementById("description1").style.display = "none";
+        document.getElementById("description2").style.display = "none";
+        document.getElementById("description3").style.display = "none";
+
+        // Mostrar descripciones en áreas específicas
+        if (x > 50 && x < 150 && y > 50 && y < 150) {
+            let desc = document.getElementById("description1");
+            desc.style.display = "block";
+            desc.style.left = x + 10 + "px";  // Posición de la descripción
+            desc.style.top = y + 10 + "px";
+        } else if (x > 300 && x < 400 && y > 100 && y < 200) {
+            let desc = document.getElementById("description2");
+            desc.style.display = "block";
+            desc.style.left = x + 10 + "px";
+            desc.style.top = y + 10 + "px";
+        } else if (x > 450 && x < 550 && y > 200 && y < 300) {
+            let desc = document.getElementById("description3");
+            desc.style.display = "block";
+            desc.style.left = x + 10 + "px";
+            desc.style.top = y + 10 + "px";
+        }
     }
 }
 

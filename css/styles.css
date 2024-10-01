@@ -1,41 +1,45 @@
-/* Estilos básicos */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
-}
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
 
-/* Contenedor de la imagen con lupa */
-.img-magnifier-container {
-    position: relative;
-    width: fit-content; /* El ancho será el necesario para contener la imagen */
-}
+        /* Contenedor de la imagen con lupa */
+        .img-magnifier-container {
+            position: relative;
+            width: fit-content; /* El ancho será el necesario para contener la imagen */
+        }
 
-/* Estilo de la lupa */
-.img-magnifier-glass {
-    position: absolute;
-    border: 3px solid #000; /* Borde negro */
-    border-radius: 50%; /* Hacer la lupa redonda */
-    cursor: none; /* Esconder el cursor normal cuando esté sobre la lupa */
-    width: 150px; /* Ancho de la lupa */
-    height: 150px; /* Altura de la lupa */
-    /* Ajusta el tamaño de la lupa según prefieras */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra para darle profundidad */
-    background-color: white; /* Color de fondo de la lupa */
-    background-repeat: no-repeat; /* Evitar que el fondo se repita */
-    background-size: 200% 200%; /* Tamaño del fondo para efecto de zoom */
-    z-index: 99; /* Colocar la lupa por encima de la imagen */
-    pointer-events: none; /* Evita que la lupa interfiera con otros eventos del mouse */
-}
+        /* Estilo de la lupa */
+        .img-magnifier-glass {
+            position: absolute;
+            border: 3px solid #000; /* Borde negro */
+            border-radius: 50%; /* Hacer la lupa redonda */
+            cursor: none; /* Esconder el cursor normal cuando esté sobre la lupa */
+            width: 150px; /* Ancho de la lupa */
+            height: 150px; /* Altura de la lupa */
+            /* Ajusta el tamaño de la lupa según prefieras */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra para darle profundidad */
+            background-color: white; /* Color de fondo de la lupa */
+            background-repeat: no-repeat; /* Evitar que el fondo se repita */
+            background-size: 200% 200%; /* Tamaño del fondo para efecto de zoom */
+            z-index: 99; /* Colocar la lupa por encima de la imagen */
+            pointer-events: none; /* Evita que la lupa interfiera con otros eventos del mouse */
+        }
 
-/* Opcional: Estilo para hacer más atractiva la página */
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-}
+        /* Descripción emergente */
+        .description {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con transparencia */
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            display: none; /* Ocultar inicialmente */
+            z-index: 100; /* Asegurar que esté encima de la lupa */
+        }
