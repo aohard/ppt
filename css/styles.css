@@ -5,8 +5,8 @@ body {
     padding: 0;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: top;
+    align-items: top;
     background-color: #f4f4f4;
 }
 
