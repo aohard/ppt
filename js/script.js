@@ -42,7 +42,7 @@ function magnify(imgID, zoom) {
         glass.style.backgroundPosition = "-" + ((x * zoom) - w) + "px -" + ((y * zoom) - h) + "px";
 
         // Mostrar la descripción correcta
-        showDescription(x, y);
+        showDescription(x / img.width * 100, y / img.height * 100);
     }
 
     function getCursorPos(e) {
@@ -56,25 +56,25 @@ function magnify(imgID, zoom) {
         return { x: x, y: y };
     }
 
-    function showDescription(x, y) {
+    function showDescription(xPercent, yPercent) {
         // Ocultar todas las descripciones
         const descriptions = document.querySelectorAll('.description');
         descriptions.forEach(desc => desc.style.display = 'none');
 
-        // Mostrar la descripción correspondiente basada en la posición del cursor
-        if (x > 0 && x < 60 && y > 0 && y < 40) {
+        // Mostrar la descripción correspondiente basada en el porcentaje de la posición del cursor
+        if (xPercent > 0 && xPercent < 60 && yPercent > 0 && yPercent < 20) {
             document.getElementById("description1").style.display = "block";
-        } else if (x > 110 && x < 180 && y > 0 && y < 40) {
+        } else if (xPercent > 60 && xPercent < 90 && yPercent > 0 && yPercent < 20) {
             document.getElementById("description2").style.display = "block";
-        } else if (x > 0 && x < 60 && y > 100 && y < 150) {
+        } else if (xPercent > 0 && xPercent < 40 && yPercent > 50 && yPercent < 65) {
             document.getElementById("description3").style.display = "block";
-        } else if (x > 80 && x < 180 && y > 40 && y < 100) {
+        } else if (xPercent > 40 && xPercent < 90 && yPercent > 21 && yPercent < 50) {
             document.getElementById("description4").style.display = "block";
-        } else if (x > 0 && x < 60 && y > 150 && y < 180) {
+        } else if (xPercent > 0 && xPercent < 40 && yPercent > 65 && yPercent < 70) {
             document.getElementById("description5").style.display = "block";
-        } else if (x > 80 && x < 180 && y > 140 && y < 190) {
+        } else if (xPercent > 40 && xPercent < 90 && yPercent > 70 && yPercent < 80) {
             document.getElementById("description6").style.display = "block";
-        } else if (x > 0 && x < 180 && y > 200 && y < 240) {
+        } else if (xPercent > 0 && xPercent < 90 && yPercent > 81 && yPercent < 100) {
             document.getElementById("description7").style.display = "block";
         }
     }
