@@ -78,7 +78,7 @@ body {
 
 
 h3 {
-    font-size: 15px;
+    font-size: 10px;
     margin: 0; /* Quita el margen por defecto de los títulos */
     color: white; /* Color del texto para que sea visible sobre el fondo oscuro */
 }
