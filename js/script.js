@@ -62,19 +62,19 @@ function magnify(imgID, zoom) {
         descriptions.forEach(desc => desc.style.display = 'none');
 
         // Mostrar la descripción correspondiente basada en la posición del cursor
-        if (x > 0 && x < 200 && y > 0 && y < 100) {
+        if (x > 0 && x < 60 && y > 0 && y < 40) {
             document.getElementById("description1").style.display = "block";
-        } else if (x > 200 && x < 350 && y > 0 && y < 100) {
+        } else if (x > 110 && x < 180 && y > 0 && y < 40) {
             document.getElementById("description2").style.display = "block";
-        } else if (x > 0 && x < 150 && y > 250 && y < 320) {
+        } else if (x > 0 && x < 60 && y > 100 && y < 150) {
             document.getElementById("description3").style.display = "block";
-        } else if (x > 150 && x < 350 && y > 120 && y < 250) {
+        } else if (x > 80 && x < 180 && y > 40 && y < 100) {
             document.getElementById("description4").style.display = "block";
-        } else if (x > 0 && x < 150 && y > 320 && y < 360) {
+        } else if (x > 0 && x < 60 && y > 150 && y < 180) {
             document.getElementById("description5").style.display = "block";
-        } else if (x > 150 && x < 350 && y > 325 && y < 380) {
+        } else if (x > 80 && x < 180 && y > 140 && y < 190) {
             document.getElementById("description6").style.display = "block";
-        } else if (x > 0 && x < 350 && y > 400 && y < 500) {
+        } else if (x > 0 && x < 180 && y > 200 && y < 240) {
             document.getElementById("description7").style.display = "block";
         }
     }
