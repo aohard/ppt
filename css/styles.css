@@ -100,8 +100,11 @@ body {
     }
 
     .description {
-        font-size: 12px; /* Tamaño de letra para pantallas grandes */
+        font-size: 16px; /* Tamaño de letra para pantallas grandes */
+        padding: 5px; /* Mantener el padding reducido */
+        margin-bottom: 5px;
     }
+
 }
 
 /* Estilos responsivos para pantallas medianas */
@@ -115,7 +118,9 @@ body {
     }
 
     .description {
-        font-size: 10px; /* Reducir tamaño de letra en pantallas medianas */
+        font-size: 12px; /* Reducir tamaño de letra en pantallas medianas */
+        padding: 4px; /* Reducir el padding en pantallas medianas */
+        margin-bottom: 4px; /* Reducir el margen entre descripciones */
     }
 }
 
@@ -136,5 +141,7 @@ body {
 
     .description {
         font-size: 10px; /* Reducir tamaño de letra en pantallas pequeñas */
+        padding: 3px; /* Reducir aún más el padding en pantallas pequeñas */
+        margin-bottom: 3px;
     }
 }
