@@ -92,11 +92,11 @@ body {
     }
 
     .img-magnifier-container {
-        width: calc(100% - 550px); /* El contenedor de la imagen ocupará el espacio restante */
+        width: calc(100% - 768px); /* El contenedor de la imagen ocupará el espacio restante */
     }
 
     .description-container {
-        width: 500px; /* Tamaño máximo de la descripción en pantallas grandes */
+        width: 768px; /* Tamaño máximo de la descripción en pantallas grandes */
     }
 
     .description {
