@@ -63,7 +63,7 @@ body {
     height: 100%; /* Ocupa todo el alto disponible */
     overflow-y: auto; /* Para permitir desplazamiento si las descripciones son más largas */
     box-sizing: border-box;
-    padding-left: 20px;
+    padding-left: 5px;
 }
 
 /* Estilo de cada descripción */
@@ -71,9 +71,9 @@ body {
     display: none; /* Oculto por defecto */
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     width: 100%; /* Las descripciones ocupan todo el ancho disponible */
     text-align: left;
     font-size: 16px; /* Tamaño base de las letras */
@@ -100,7 +100,7 @@ body {
     }
 
     .description {
-        font-size: 15px; /* Tamaño de letra para pantallas grandes */
+        font-size: 12px; /* Tamaño de letra para pantallas grandes */
     }
 }
 
