@@ -107,7 +107,7 @@ body {
 /* Estilos responsivos para pantallas medianas */
 @media (max-width: 768px) {
     .img-magnifier-container {
-        width: calc(100% - 150px); /* Imagen se adapta a pantallas medianas */
+        width: calc(100% - 350px); /* Imagen se adapta a pantallas medianas */
     }
 
     .description-container {
@@ -115,7 +115,7 @@ body {
     }
 
     .description {
-        font-size: 14px; /* Reducir tamaño de letra en pantallas medianas */
+        font-size: 10px; /* Reducir tamaño de letra en pantallas medianas */
     }
 }
 
