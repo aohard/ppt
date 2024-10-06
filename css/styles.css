@@ -96,7 +96,7 @@ body {
     }
 
     .description-container {
-        width: 220px; /* Tamaño máximo de la descripción en pantallas grandes */
+        width: 500px; /* Tamaño máximo de la descripción en pantallas grandes */
     }
 
     .description {
@@ -111,7 +111,7 @@ body {
     }
 
     .description-container {
-        width: 150px; /* Reducir tamaño de las descripciones */
+        width: 350px; /* Reducir tamaño de las descripciones */
     }
 
     .description {
