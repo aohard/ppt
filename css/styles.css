@@ -84,6 +84,20 @@ body {
     display: block;
 }
 
+.description p {
+    margin-bottom: 5px; /* Reducir el margen inferior de los párrafos */
+}
+
+.image-title-container {
+    margin-bottom: 10px; /* Reducir el margen inferior entre la imagen y el siguiente párrafo */
+}
+
+.image-title-container img {
+    display: block; /* Asegurar que la imagen se muestre como bloque */
+    margin: 0; /* Quitar el margen predeterminado de las imágenes */
+    padding: 0; /* Quitar el padding predeterminado de las imágenes */
+}
+
 /* Estilos responsivos para pantallas grandes */
 @media (min-width: 768px) {
     .container {
@@ -119,8 +133,8 @@ body {
 
     .description {
         font-size: 12px; /* Reducir tamaño de letra en pantallas medianas */
-        padding: 4px; /* Reducir el padding en pantallas medianas */
-        margin-bottom: 4px; /* Reducir el margen entre descripciones */
+        padding: 3px; /* Reducir el padding en pantallas medianas */
+        margin-bottom: 3px; /* Reducir el margen entre descripciones */
     }
 }
 
