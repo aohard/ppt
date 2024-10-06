@@ -100,7 +100,7 @@ body {
     }
 
     .description {
-        font-size: 16px; /* Tamaño de letra para pantallas grandes */
+        font-size: 15px; /* Tamaño de letra para pantallas grandes */
         padding: 5px; /* Mantener el padding reducido */
         margin-bottom: 5px;
     }
