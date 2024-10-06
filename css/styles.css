@@ -92,7 +92,7 @@ body {
     }
 
     .img-magnifier-container {
-        width: calc(100% - 220px); /* El contenedor de la imagen ocupará el espacio restante */
+        width: calc(100% - 550px); /* El contenedor de la imagen ocupará el espacio restante */
     }
 
     .description-container {
@@ -100,7 +100,7 @@ body {
     }
 
     .description {
-        font-size: 16px; /* Tamaño de letra para pantallas grandes */
+        font-size: 10px; /* Tamaño de letra para pantallas grandes */
     }
 }
 
