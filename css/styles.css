@@ -57,9 +57,9 @@ body {
 
 /* Contenedor de descripciones alineadas a la derecha */
 .description-container {
-    width: 500px; /* Tamaño máximo de la descripción en pantallas grandes */
+    width: 220px; /* Tamaño máximo de la descripción en pantallas grandes */
     flex-shrink: 1; /* Permite que el contenedor de descripciones se reduzca */
-    min-width: 30px; /* Evita que el contenedor sea menor de 20px */
+    min-width: 20px; /* Evita que el contenedor sea menor de 20px */
     height: 100%; /* Ocupa todo el alto disponible */
     overflow-y: auto; /* Para permitir desplazamiento si las descripciones son más largas */
     box-sizing: border-box;
@@ -76,6 +76,7 @@ body {
     margin-bottom: 10px;
     width: 100%; /* Las descripciones ocupan todo el ancho disponible */
     text-align: left;
+    font-size: 16px; /* Tamaño base de las letras */
 }
 
 /* Clase activa que muestra la descripción */
@@ -95,7 +96,11 @@ body {
     }
 
     .description-container {
-        width: 500px; /* Tamaño máximo de la descripción en pantallas grandes */
+        width: 220px; /* Tamaño máximo de la descripción en pantallas grandes */
+    }
+
+    .description {
+        font-size: 16px; /* Tamaño de letra para pantallas grandes */
     }
 }
 
@@ -107,6 +112,10 @@ body {
 
     .description-container {
         width: 150px; /* Reducir tamaño de las descripciones */
+    }
+
+    .description {
+        font-size: 14px; /* Reducir tamaño de letra en pantallas medianas */
     }
 }
 
@@ -122,6 +131,10 @@ body {
     }
 
     .description-container {
-        width: 50px; /* Reducir tamaño de las descripciones */
+        width: 150px; /* Reducir tamaño de las descripciones */
+    }
+
+    .description {
+        font-size: 10px; /* Reducir tamaño de letra en pantallas pequeñas */
     }
 }
