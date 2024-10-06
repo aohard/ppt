@@ -64,17 +64,17 @@ function magnify(imgID, zoom) {
         // Mostrar la descripción correspondiente basada en el porcentaje de la posición del cursor
         if (xPercent > 0 && xPercent < 60 && yPercent > 0 && yPercent < 20) {
             document.getElementById("description1").style.display = "block";
-        } else if (xPercent > 60 && xPercent < 102 && yPercent > 0 && yPercent < 20) {
+        } else if (xPercent > 60 && xPercent < 101 && yPercent > 0 && yPercent < 20) {
             document.getElementById("description2").style.display = "block";
         } else if (xPercent > 0 && xPercent < 40 && yPercent > 50 && yPercent < 65) {
             document.getElementById("description3").style.display = "block";
-        } else if (xPercent > 40 && xPercent < 102 && yPercent > 21 && yPercent < 50) {
+        } else if (xPercent > 40 && xPercent < 101 && yPercent > 21 && yPercent < 50) {
             document.getElementById("description4").style.display = "block";
         } else if (xPercent > 0 && xPercent < 40 && yPercent > 65 && yPercent < 70) {
             document.getElementById("description5").style.display = "block";
-        } else if (xPercent > 40 && xPercent < 102 && yPercent > 70 && yPercent < 80) {
+        } else if (xPercent > 40 && xPercent < 101 && yPercent > 70 && yPercent < 80) {
             document.getElementById("description6").style.display = "block";
-        } else if (xPercent > 0 && xPercent < 102 && yPercent > 80 && yPercent < 101) {
+        } else if (xPercent > 0 && xPercent < 101 && yPercent > 80 && yPercent < 101) {
             document.getElementById("description7").style.display = "block";
         }
     }
