@@ -5,8 +5,8 @@ body {
     padding: 0;
     height: 100vh;
     display: flex;
-    justify-content: top;
-    align-items: top;
+    justify-content: flex-start;
+    align-items: flex-start;
     background-color: #f4f4f4;
     overflow: hidden; /* Evitar scrolls no deseados */
 }
@@ -26,9 +26,7 @@ body {
 /* Contenedor de la imagen con lupa */
 .img-magnifier-container {
     position: relative;
-    margin-right: 20px; /* Separación de la imagen respecto a las descripciones */
-    flex-shrink: 0; /* La imagen no se redimensionará */
-    width: 50%; /* Ocupa el 50% del ancho disponible */
+    width: calc(100% - 220px); /* El contenedor de la imagen ocupará el espacio restante */
     height: 100%; /* Ocupa todo el alto */
     max-width: 100%; /* Asegura que no exceda el ancho */
     max-height: 100%; /* Asegura que no exceda la altura */
@@ -59,13 +57,13 @@ body {
 
 /* Contenedor de descripciones alineadas a la derecha */
 .description-container {
-    flex-grow: 1; /* La sección de descripciones crecerá para ocupar el espacio disponible */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 20px;
-    max-width: 400px; /* Limitar el ancho de las descripciones */
+    width: 220px; /* Tamaño máximo de la descripción en pantallas grandes */
+    flex-shrink: 1; /* Permite que el contenedor de descripciones se reduzca */
+    min-width: 20px; /* Evita que el contenedor sea menor de 20px */
+    height: 100%; /* Ocupa todo el alto disponible */
     overflow-y: auto; /* Para permitir desplazamiento si las descripciones son más largas */
+    box-sizing: border-box;
+    padding-left: 20px;
 }
 
 /* Estilo de cada descripción */
@@ -85,53 +83,30 @@ body {
     display: block;
 }
 
-/* Contenedor para las imágenes y títulos */
-.image-title-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-h3 {
-    font-size: 10px;
-    margin: 0; /* Quita el margen por defecto de los títulos */
-    color: white; /* Color del texto para que sea visible sobre el fondo oscuro */
-}
-
 /* Estilos responsivos para pantallas grandes */
 @media (min-width: 768px) {
     .container {
-        height: 100vh;
+        flex-direction: row;
         justify-content: space-between;
     }
 
     .img-magnifier-container {
-        flex-shrink: 0;
-        margin-right: 20px;
-        width: 50%; /* Asegura que la imagen ocupe el 50% del ancho */
+        width: calc(100% - 220px); /* El contenedor de la imagen ocupará el espacio restante */
     }
 
     .description-container {
-        max-width: 400px;
-        padding-left: 20px;
+        width: 220px; /* Tamaño máximo de la descripción en pantallas grandes */
     }
 }
 
 /* Estilos responsivos para pantallas medianas */
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column; /* Cambia la dirección a columna */
-        height: auto; /* Permitir que el contenedor crezca con el contenido */
-    }
-
     .img-magnifier-container {
-        width: 100%; /* Ocupa el 100% del ancho en pantallas medianas */
-        margin-right: 0; /* Elimina el margen en pantallas medianas */
+        width: calc(100% - 150px); /* Imagen se adapta a pantallas medianas */
     }
 
     .description-container {
-        max-width: 100%; /* Descripciones ocupan todo el ancho disponible */
-        padding-left: 0; /* Elimina el padding izquierdo */
+        width: 150px; /* Reducir tamaño de las descripciones */
     }
 }
 
@@ -142,18 +117,11 @@ h3 {
         height: 70px; /* Reduce el tamaño de la lupa */
     }
 
-    .container {
-        flex-direction: column;
-        padding: 10px;
-    }
-
     .img-magnifier-container {
-        width: 100%; /* En pantallas pequeñas, la imagen ocupa el 100% */
-        margin-right: 0;
+        width: calc(100% - 50px); /* Imagen ocupará el espacio restante */
     }
 
     .description-container {
-        max-width: 100%;
-        padding-left: 0;
+        width: 50px; /* Reducir tamaño de las descripciones */
     }
 }
