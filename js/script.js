@@ -74,7 +74,7 @@ function magnify(imgID, zoom) {
             document.getElementById("description5").style.display = "block";
         } else if (xPercent > 40 && xPercent < 90 && yPercent > 70 && yPercent < 80) {
             document.getElementById("description6").style.display = "block";
-        } else if (xPercent > 0 && xPercent < 90 && yPercent > 80 && yPercent < 100) {
+        } else if (xPercent > 0 && xPercent < 90 && yPercent > 80 && yPercent < 101) {
             document.getElementById("description7").style.display = "block";
         }
     }
